@@ -30,10 +30,7 @@
                             <a class="nav-link" href="todasCapacitacoes.html">Capacitações</a>
                         </li>
                         <li class="btn btn__custom nav-item mx-2 my-1">
-                            <a class="nav-link" href="../bancoSFX/todosBancos.html">Banco de SFX</a>
-                        </li>
-                        <li class="btn btn__custom nav-item mx-2 my-1">
-                            <a class="nav-link" href="../quemSomos/quemSomos.html">Quem Somos</a>
+                            <a class="nav-link" href="../bancosSFX/opcoesBancosSFX.html">Banco de SFX</a>
                         </li>
                     </ul>
                 </div>
@@ -43,22 +40,87 @@
     <!--Fim do Cabecalho-->
 
     <!--Corpo-->
-    <div class="container">
+    <!--Exibido apenas em telas maiores de 1400px-->
+    <div class="container d-none d-xxl-block">
         <div class="row">
             <div class="col-md-12 mt-5 text-center">
                 <h1>Capacitações</h1>
             </div>
-            <div class="col-md-12 mt-5 text-center">
-                <h3>Capacitação é um processo de desenvolvimento de habilidades e conhecimentos com o objetivo de melhorar a eficiência e a eficácia no desempenho de tarefas específicas</h3>
+            <div class="col-5 mt-5 mx-5 border rounded-2 bg-dark custom-box d-flex flex-column justify-content-center align-items-center">
+                <h1>Programação</h1>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='programacao/opcoesProgramacoes.html';">Programação</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='arte2D/opcoesArte2D.html';">Arte 2D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='modelagem3D/opcoesModelagem3D.html';">Modelagem 3D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='audio/opcoesAudio.html';">Audio</button>
             </div>
-            <div class="col-md-12 mt-5 text-center">
-                <h5>Escolha a capacitação</h5>
+            <div class="col-5 mt-5 mx-5 border rounded-2 bg-dark custom-box d-flex flex-column justify-content-center align-items-center">
+                <h1>Programação</h1>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='programacao/opcoesProgramacoes.html';">Programação</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='arte2D/opcoesArte2D.html';">Arte 2D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='modelagem3D/opcoesModelagem3D.html';">Modelagem 3D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='audio/opcoesAudio.html';">Audio</button>
             </div>
-            <div class="col-md-12 text-center">
-                <button class="btn-custom mt-3 ms-2 me-3" onclick="window.location.href='programacao/opcoesProgramacoes.html';">Programação</button>
-                <button class="btn-custom mt-3 ms-2 me-3" onclick="window.location.href='html/capacitacoes/todasCapacitacoes.html';">Arte 2D</button>
-                <button class="btn-custom mt-3 ms-2 me-3" onclick="window.location.href='html/capacitacoes/todasCapacitacoes.html';">Modelagem 3D</button>
-                <button class="btn-custom mt-3 ms-2 me-3" onclick="window.location.href='html/capacitacoes/todasCapacitacoes.html';">Audio</button>
+        </div>
+    </div>
+
+    <!--Exibido apenas em telas entre 1200px e 1400px-->
+    <div class="container d-none d-xl-block d-xxl-none">
+        <div class="row">
+            <div class="col-md-12 mt-5 text-center">
+                <h1>Capacitações</h1>
+            </div>
+            <div class="col-5 mt-5 ms-5 border rounded-2 bg-dark custom-box d-flex flex-column justify-content-center align-items-center">
+                <h1>Programação</h1>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='programacao/opcoesProgramacoes.html';">Programação</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='arte2D/opcoesArte2D.html';">Arte 2D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='modelagem3D/opcoesModelagem3D.html';">Modelagem 3D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='audio/opcoesAudio.html';">Audio</button>
+            </div>
+            <div class="col-5 mt-5 ms-5 border rounded-2 bg-dark custom-box d-flex flex-column justify-content-center align-items-center">
+                <h1>Programação</h1>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='programacao/opcoesProgramacoes.html';">Programação</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='arte2D/opcoesArte2D.html';">Arte 2D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='modelagem3D/opcoesModelagem3D.html';">Modelagem 3D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='audio/opcoesAudio.html';">Audio</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Exibido em telas entre 576px e 1200px-->
+    <div class="container d-none d-sm-block d-md-block d-lg-block d-xl-none d-xxl-none">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-md-12 mt-5 text-center">
+                <h1>Capacitações</h1>
+            </div>
+            <div class="col-5 mt-5 border rounded-2 bg-dark custom-box d-flex flex-column justify-content-center align-items-center">
+                <h1>Programação</h1>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='programacao/opcoesProgramacoes.html';">Programação</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='arte2D/opcoesArte2D.html';">Arte 2D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='modelagem3D/opcoesModelagem3D.html';">Modelagem 3D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='audio/opcoesAudio.html';">Audio</button>
+            </div>
+            <div class="col-5 mt-5 border rounded-2 bg-dark custom-box d-flex flex-column justify-content-center align-items-center">
+                <h1>Programação</h1>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='programacao/opcoesProgramacoes.html';">Programação</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='arte2D/opcoesArte2D.html';">Arte 2D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='modelagem3D/opcoesModelagem3D.html';">Modelagem 3D</button>
+                <button class="btn-custom btn-size mt-3" onclick="window.location.href='audio/opcoesAudio.html';">Audio</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Exibido apenas em telas abaixo de 576px-->
+    <div class="container d-xs-block d-lg-none d-xl-none d-xxl-none">
+        <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-md-12 mt-5 text-center">
+                <h1>Capacitações</h1>
+            </div>
+            <div class="col-5 mt-5 border rounded-2 bg-dark custom-device-box d-flex flex-column justify-content-center align-items-center">
+                <h1>Programação</h1>
+                <button class="btn-custom btn-device-size mt-3" onclick="window.location.href='programacao/opcoesProgramacoes.html';">Programação</button>
+                <button class="btn-custom btn-device-size mt-3" onclick="window.location.href='arte2D/opcoesArte2D.html';">Arte 2D</button>
+                <button class="btn-custom btn-device-size mt-3" onclick="window.location.href='modelagem3D/opcoesModelagem3D.html';">Modelagem 3D</button>
+                <button class="btn-custom btn-device-size mt-3" onclick="window.location.href='audio/opcoesAudio.html';">Audio</button>
             </div>
         </div>
     </div>
