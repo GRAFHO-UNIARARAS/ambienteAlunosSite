@@ -1,13 +1,12 @@
 body {
-    background: rgb(17,17,17);
-    background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(20, 20, 20);
 }
 
 h1, h2, h3, h4, h5 {
     color: rgb(255, 255, 255);
 }
 
-.btn-custom {
+.btn-style {
     padding: 1rem 2rem;
     border: none;
     border-radius: 0.3125rem;
@@ -24,14 +23,14 @@ h1, h2, h3, h4, h5 {
     outline: 0.125rem solid rgb(255, 255, 255);
   }
   
-  .btn-custom:hover {
+  .btn-style:hover {
     color: #ffffff;
     transform: scale(1.1);
     outline: 0.125rem solid #1967cc;
     box-shadow: 0.25rem 0.3125rem 1.0625rem -0.25rem #268391;
   }
   
-  .btn-custom::before {
+  .btn-style::before {
     content: "";
     position: absolute;
     left: -3.125rem;
@@ -44,7 +43,7 @@ h1, h2, h3, h4, h5 {
     transition: width 1000ms;
   }
   
-  .btn-custom:hover::before {
+  .btn-style:hover::before {
     width: 250%;
   }
 
@@ -52,8 +51,9 @@ h1, h2, h3, h4, h5 {
     width: 20rem;
   }
 
-  .btn-device-size{
-    width: 15rem;
+  .btn-back-size{
+    padding: 0.2rem 1rem !important;
+    font-size: 1.3rem;
   }
 
   .border {
@@ -68,4 +68,8 @@ h1, h2, h3, h4, h5 {
   .custom-device-box{
     min-height: 31.25rem;
     min-width: 21.25rem;
+  }
+
+  .custom-border {
+    border: 0.3rem solid #676767 !important;
   }
