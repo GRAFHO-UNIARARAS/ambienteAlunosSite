@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAFHO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!--Cabecalho-->
+    <header class="background__color">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-4" href="../../../index.html">
+                    <img src="../../../media/logo.png" alt="Logo" class="logo-img">
+                </a>
+                <!--Cria um menu tipo hamburguer que contem os itens do menu-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>   
+                </button>
+                <!---->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="btn nav-item mx-2 my-1">
+                            <a class="nav-link nav__text--color" href="../../../html/capacitacoes/opcoesCapacitacoes.html">Capacitações</a>
+                        </li>
+                        <li class="btn nav-item mx-2 my-1">
+                            <a class="nav-link nav__text--color" href="../../../html/bancosSFX/opcoesBancosSFX.html">Banco de SFX</a>
+                        </li>
+                        <li class="btn nav-item mx-2 my-1">
+                            <a class="nav-link nav__text--color" href="../outros.html">Outros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Fim do Cabecalho-->
+
+    <!--Corpo-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h2>Configurações iniciais do Git e Github</h2>
+            </div>
+            <div class="col-md-12 mt-5">
+                <h5>1. Instalando o GIT</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Clique <a href="https://git-scm.com/downloads" target="_blank">Aqui</a> para acessar o site do GIT</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/configGit/git1.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Faça o Download do GIT e a instalação</h5>
+            </div>
+            <div class="col-md-12 mt-4">
+                <h5>2. Criando uma conta no GITHUB</h5>
+            </div> 
+            <div class="col-md-12 mt-2">
+                <h5>Clique <a href="https://github.com/" target="_blank">Aqui</a> para acessar o site do GITHUB</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Selecione a opção de "Sign up" no canto superior direito da tela e faça a criação da conta. (OBS: Utilize seu email pessoal, não utilize o email da faculdade)</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Acesse sua conta do GITHUB</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/configGit/git2.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Exemplo de tela inicial do GITHUB, como a conta é nova a tela inicial pode estar um pouco diferente</h5>
+            </div>
+            <div class="col-md-12 mt-4">
+                <h5>3. Configurando GITHUB</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Primeiramente precisamos adquirir a chave SSH, como você está trabalhando em um ambiente que não é local ao 
+                    GITHUB(na maioria dos casos seu desktop) o GITHUB utiliza um sistema de segurança baseado em chaves onde o ambiente carrega um chave 
+                    publica e o GITHUB uma chave privada, a chave publica é a unica que consegue destravar a chave privada e dar acesso ao computador para utilizar a conta</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Vá para a tela inicial do seu desktop e clique com o botão direito e selicione o Bash do GIT</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/configGit/git3.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/configGit/git4.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Use o comando "ssh-keygen -t rsa -b 4096 -C "your_email@example.com", altere para o email que você utilizou para criar a conta do GITHUB</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Caso tenha dado certo o texto "Generating public/private ALGORITHM key pair." será exibido</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Em seguida ele irá mostrar uma mensagem perguntando qual caminho você quer deixar salvo as chaves, deixe o caminho padrão mostrado e pressione "Enter"</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Caso ele solicite uma senha para proteção, utilize uma senha facil de ser lembrada, eu recomendo colocar o próprio nome em letra minuscula, já que é apenas um
+                    procedimento padrão de segurança
+                </h5>
+            </div>
+            <div class="col-md-12 mt-4">
+                <h5>4. Localizando a chave SSH</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Procure por um pasta ssh na sua pasta de usuarios dentro do C:</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/configGit/git5.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Acesse a pasta e localize o arquivo "id_rsa.pub" e abra ele utilizando o bloco de notas ou via terminal</h5>
+            </div>
+            <div class="col-md-12 mt-4">
+                <h5>5. Registrando a chave no GITHUB</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Volte para o GITHUB e clique no icone superior direito para abrir mais opções e selecione "Settings"</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/configGit/git6.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Selecione a opção "SSH and GPG Keys"</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/configGit/git7.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Selecione a opção "New SSH Key"</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/configGit/git8.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Em "Title" deixe um nome que remeta ao desktop que esta usando "Nome-Notebook" ou "Nome-PC", em "key Type" deixe a opção "Authentication Key" e em "Key" cole
+                    cole todo o conteudo que tinha dentro do arquivo "id_rsa.pub" e por fim selecione "Add SSH Key"
+                </h5>
+            </div>
+            <div class="col-md-12 mt-2 mb-5">
+                <h5>Pronto, seu GITHUB está configurado nesse desktop!!!!</h5>
+            </div> 
+        </div>
+    </div>
+    <!--Fim do Corpo-->
+
+    <!--Rodape-->
+    <footer class="p-4 mt-auto background__color">
+        <div class="row">
+            <div class="col-md-10">
+                <a href="https://www.instagram.com/grupografho/" target="_blank"><i class="bi bi-instagram mx-2 footer__icon"></i></a>
+            </div>
+            <div class="col-md-2">
+                <p class="mb-0 mt-3 ms-auto footer__creatorName">Criado por Hugo Novo Gouvea</p>
+            </div>
+        </div>
+    </footer>
+    <!--Fim do Rodape-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+</body>
+</html>

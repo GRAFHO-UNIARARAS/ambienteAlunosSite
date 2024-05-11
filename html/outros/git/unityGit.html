@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAFHO</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!--Cabecalho-->
+    <header class="background__color">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-4" href="../../../index.html">
+                    <img src="../../../media/logo.png" alt="Logo" class="logo-img">
+                </a>
+                <!--Cria um menu tipo hamburguer que contem os itens do menu-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>   
+                </button>
+                <!---->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="btn nav-item mx-2 my-1">
+                            <a class="nav-link nav__text--color" href="../../../html/capacitacoes/opcoesCapacitacoes.html">Capacitações</a>
+                        </li>
+                        <li class="btn nav-item mx-2 my-1">
+                            <a class="nav-link nav__text--color" href="../../../html/bancosSFX/opcoesBancosSFX.html">Banco de SFX</a>
+                        </li>
+                        <li class="btn nav-item mx-2 my-1">
+                            <a class="nav-link nav__text--color" href="../outros.html">Outros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Fim do Cabecalho-->
+
+    <!--Corpo-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h2>Usando Github Desktop no Unity</h2>
+            </div>
+            <div class="col-md-12 mt-5">
+                <h5>1. Instalando o Github Desktop</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Clique <a href="https://desktop.github.com/" target="_blank">Aqui</a> para acessar o site do Github Desktop</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Faça o Download e execute o Github Desktop e faça o login utilizando seu email e senha do Github</h5>
+            </div>
+            <div class="col-md-12 mt-4">
+                <h5>2. Criando um repositorio no Github</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Volte para o Github e crie um repositório, repositórios são onde ficaram armazenados os arquivos dos seus projetos</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/unityGit/unityGit1.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Coloque o nome do seu repositório, um descrição se quiser, marque publico caso queira que outras pessoas vejam seu repositório ou privado caso não, marque a caixa
+                    de "Add a README file", isso irá criar um arquivo txt chamado README que é usado para colocar observações e informações do seu repositório e a parte mais importante,
+                    no "Add gitignore" procure pela opção "Unity", na licensa deixe como "None" e então clique em "Create Repository"
+                </h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Pronto, repositório criado!!!</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/unityGit/unityGit2.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-4">
+                <h5>3. Clonando o repositório em seu desktop utilizando o Github Desktop</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Em seu repositório selecione a opção "<> Code", um link HTTPS será exibido</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/unityGit/unityGit3.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Copie esse link</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Volte para o Github Desktop, vá em "File" na barra superior de opção e selecione "Clone repository" ou use o comando "Ctrl + shift + O"</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/unityGit/unityGit4.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Selecione o opção "URL", informe a ULR que você copiou no seu github quando clicou no botão "<> Code" e escolha o caminho do repositório 
+                criado no seu desktop</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Tudo que for adicionado dentro desse repositório poderá ser enviado para o seu github, crie o projeto Unity dentro desse repositório e para cada novo projeto
+                você precisará criar um novo repositório no github.
+                </h5>
+            </div>
+            <div class="col-md-12 mt-4">
+                <h5>4. configurando o gitignore</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Vá até o repositório que você acabou de clonar em sua maquina e localize o arquivo .gitignore, abra ele usando o bloco de notas</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/unityGit/unityGit5.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Apague essas "/" marcadas na imagem e salve o arquivo</h5>
+            </div>
+            <div class="col-md-12 mt-4">
+                <h5>5. Usando o github desktop</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>No github desktop você pode ver todas as atualizaçõs, adições e exclusões de arquivos que foram feitas dentro do repositório em seu desktop, tambem conhecido
+                    como repositório local
+                </h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/unityGit/unityGit6.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Imagem apenas de exemplo
+                </h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Para adicionar um arquivo no repositório no seu github atraves do github desktop você precisa...</h5>
+            </div>
+            <div class="col-md-12 mt-2">
+                <img src="../../../media/git/unityGit/unityGit7.PNG" alt="Logo" class="logo-img">
+            </div>
+            <div class="col-md-12 mt-2">
+                <h5>Pressione o Fetch Origin na parte superior se ele estiver aparecendo para sincronizar com seu github e procurar possiveis alterações, em seguida marque a 
+                    caixinha dos itens que quer enviar para o github, escreva um sumario explicando a ação que esta sendo feita e em seguida pressione o botão de "commit to main"</h5>
+            </div>
+        </div>
+    </div>
+    <!--Fim do Corpo-->
+
+    <!--Rodape-->
+    <footer class="p-4 mt-auto background__color">
+        <div class="row">
+            <div class="col-md-10">
+                <a href="https://www.instagram.com/grupografho/" target="_blank"><i class="bi bi-instagram mx-2 footer__icon"></i></a>
+            </div>
+            <div class="col-md-2">
+                <p class="mb-0 mt-3 ms-auto footer__creatorName">Criado por Hugo Novo Gouvea</p>
+            </div>
+        </div>
+    </footer>
+    <!--Fim do Rodape-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+</body>
+</html>
